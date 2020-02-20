@@ -24,4 +24,4 @@ save=$(echo "$fix" | tr '[A-Za-z]' ["$cek1"-ZA-"$cek2""$cek3"-za-"$cek4"])
 # echo ${besar[n]}
 # echo $save
 
-password= < /dev/urandom tr -dc A-Za-z0-9 | head -c28 > `pwd`/"$save".txt
+ < /dev/urandom tr -dc A-Za-z0-9 | head -c28 > `pwd`/"$save".txt
