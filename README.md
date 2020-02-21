@@ -151,5 +151,10 @@ for((i=1;i<=28;i++))
 			done
       
 ```
+'''
+5 8,14,22 * * SUN-FRI /bin/bash /home/iqbalhumam73/p1/tiga.sh
+'''
+crontab untuk 3b
+
 belum selesai mas, cuma sampai 3a dan 3b :(
 
