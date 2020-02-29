@@ -130,9 +130,8 @@ save=$(echo "$fix2" | tr '[A-Za-z]' ["$cek1"-ZA-"$cek2""$cek3"-za-"$cek4"])
 ```
 
 ## NO 3
-
-
+Pada soal nomor 3 ini, program harus dapat melakukan download secara otomatis di jam 6.05, 14.05, dan 22.05 di setiap hari kecuali hari Sabtu. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MzI2NDUxM119
+eyJoaXN0b3J5IjpbMTA5MzQ2NTgzMSwxODczMjY0NTEzXX0=
 -->
