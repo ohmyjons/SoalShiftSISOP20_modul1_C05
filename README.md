@@ -155,6 +155,55 @@ Pada soal 3B, program tiga.sh harus berjalan otomatis sesuai permintaan soal. Ma
 Program tiga.sh akan ter-bash secara otomatis di menit ke 5 tiap jam 6, 14, 22 dan setiap hari kecuali hari Sabtu.
 
  Pada 3C, program harus melakukan check secara otomatis, apabila gambar yang terdownload belum pernah terdownload sebelumnya, maka gambar tersebut harus disimpan dalam folder kenangan dengan nomor urut. Namun, apabila gambar sudah pernah terdownload, maka gambar tersebut harus disimpan dalam folder Duplicate.
+
+```
+#! /bin/bash
+
+ > /home/iqbalhumam73/p1/tiga/wget.log   
+ > /home/iqbalhumam73/p1/tiga/location.log 
+
+for ((a=1; a<=28; a=a+1))
+	do
+	wget -a /home/iqbalhumam73/p1/tiga/wget.log "https://loremflickr.com/320/240/cat" -O /home/iqbalhumam73/p1/tiga/pdkt_kusuma_"$a".jpeg
+done
+
+grep "Location" /home/iqbalhumam73/p1/tiga/wget.log  > /home/iqbalhumam73/p1/tiga/location.log 
+
+readarray -t array < /home/iqbalhumam73/p1/tiga/location.log 
+flag=0
+for((a=0; a<28; a=a+1)) 
+do
+	jumlahkenangan=$(ls -1  /home/iqbalhumam73/p1/tiga/kenangan | wc -l)
+	jumlahduplicate=$(ls -1 /home/iqbalhumam73/p1/tiga/duplicate | wc -l)
+	flag=$((0))
+	
+	for((i=0; i<$a; i=i+1)) 
+		do 
+		if [ $jumlahkenangan -eq 0 ] 
+			then mv /home/iqbalhumam73/p1/tiga/pdkt_kusuma_1.jpeg /home/iqbalhumam73/p1/tiga/kenangan/kenangan_1.jpeg
+			
+		
+		elif [ "${array[$a]}" == "${array[$i]}" ] 
+		then 
+			flag=$((1))
+			break
+		fi
+	done
+	
+	if [ $flag -eq 0 ] 
+	then 
+		mv /home/iqbalhumam73/p1/tiga/pdkt_kusuma_"$(($a+1))".jpeg /home/iqbalhumam73/p1/tiga//kenangan/kenangan_"$(($jumlahkenangan+1))".jpeg
+	else 
+		mv /home/iqbalhumam73/p1/tiga/pdkt_kusuma_"$(($a+1))".jpeg /home/iqbalhumam73/p1/tiga//duplicate/duplicate_"$(($jumlahduplicate+1))".jpeg
+	fi
+done
+
+cat wget.log >> wget.log.bak
+cat location.log >> location.log.bak
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNDExNzc0OCwxODczMjY0NTEzXX0=
+eyJoaXN0b3J5IjpbLTE2MDI5NDc0OTMsMTUyNDExNzc0OCwxOD
+czMjY0NTEzXX0=
 -->
