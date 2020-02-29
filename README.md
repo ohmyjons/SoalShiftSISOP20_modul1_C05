@@ -149,6 +149,12 @@ Pada 3A, dilakukan looping sebanyak permintaan soal, yaitu 28 dan semua gambar d
 
 Pada soal 3B, program tiga.sh harus berjalan otomatis sesuai permintaan soal. Maka dari itu, diperlukan program crontab yang nantinya akan melakukan bash terhadap file tiga.sh
 
+```
+5 6,14,22 * * 0-5 bash /home/iqbalhumam73/p1/tiga.sh
+```
+Program tiga.sh akan ter-bash secara otomatis di menit ke 5 tiap jam 6, 14, 22 dan setiap hari kecuali hari Sabtu.
+
+ Pada 3C, program harus melakukan check secara otomatis, apabila foro
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg3MTQyNTc4LDE4NzMyNjQ1MTNdfQ==
+eyJoaXN0b3J5IjpbLTg5MzYwNDMwNCwxODczMjY0NTEzXX0=
 -->
