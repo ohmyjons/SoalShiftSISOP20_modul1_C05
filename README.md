@@ -131,30 +131,6 @@ save=$(echo "$fix2" | tr '[A-Za-z]' ["$cek1"-ZA-"$cek2""$cek3"-za-"$cek4"])
 
 
 
-### Nomor 3
-```
-for((i=1;i<=28;i++))
-	do
-	jumlahkenangan=$(/home/iqbalhumam73/p1/kenangan ls -A | grep .jpg | wc -l)
-	jumlahduplicate=$(/home/iqbalhumam73/p1/duplicate ls -A | grep .jpg | wc -1)
-	wget -o /home/iqbalhumam73/p1/tiga/wget.log "https://loremflickr.com/320/240/cat" -O  /home/iqbalhumam73/p1/tiga/pdkt_kusuma_$i.jpg
-	if(!jumlahkenangan){
-		mv home/iqbalhumam73/p1/tiga/pdkt_kusuma_$i.jpg home/iqbalhumam73/p1/tiga/kenangan/kenangan_1.jpg
-	}
-	else{
-		for ((j=1;j<jumlahkenangan;j++)){
-			do
-			if(( (compare -metric AE kenangan_$j.jpg pdkt_kusuma_$i.jpg null:) eq 0){
-				if(!jumlahduplicate){
-					mv home/iqbalhumam73/p1/tiga/pdkt_kusuma_$i.jpg home/iqbalhumam73/p1/tiga/kenangan/kenangan_1.jpg
-				}
-			done
-      
-```
-'''
-5 8,14,22 * * SUN-FRI /bin/bash /home/iqbalhumam73/p1/tiga.sh
-'''
-crontab untuk 3b
-
-belum selesai mas, cuma sampai 3a dan 3b :(
-
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjEzNDk0NjI2M119
+-->
