@@ -145,7 +145,10 @@ for ((a=1; a<=28; a=a+1))
 	wget -a /home/iqbalhumam73/p1/tiga/wget.log "https://loremflickr.com/320/240/cat" -O /home/iqbalhumam73/p1/tiga/pdkt_kusuma_"$a".jpeg
 done
 ```
-Pada 3A, 
+Pada 3A, dilakukan looping sebanyak permintaan soal, yaitu 28 dan semua gambar disimpan pada home/iqbalhumam73/p1/tiga
+
+Pada soal 3B, program tiga.sh harus berjalan otomatis sesuai permintaan soal. Maka dari itu, diperlukan program crontab yang nantinya akan melakukan bash terhadap file tiga.sh
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTY2NjA5NTQsMTg3MzI2NDUxM119
+eyJoaXN0b3J5IjpbODg3MTQyNTc4LDE4NzMyNjQ1MTNdfQ==
 -->
