@@ -201,8 +201,8 @@ done
 cat wget.log >> wget.log.bak
 cat location.log >> location.log.bak
 ```
-Setelah 28 foto didownload, location dari setiap foto disimpan dalam suatu array. Kemudian dilakukan looping sampai 28 kali untuk melakukan cek dari semua foto yang baru didownload. Kemudian di tiap looping kita melakukan cek jumlah foto yang ada di folder kenangan dan juga folder duplicate. 
+Setelah 28 foto didownload, location dari setiap foto disimpan dalam suatu array. Kemudian dilakukan looping sampai 28 kali untuk melakukan cek dari semua foto yang baru didownload. Kemudian di tiap looping kita melakukan cek jumlah foto yang ada di folder kenangan dan juga folder duplicate. Kemudian di tiap foto dicek location yang sebelumnya sudah disimpan di dalam array, apabila sudah pernah ada, maka ditandai dengan flag=1, namun apabila masih belum, maka flag tetap 0. kemudian dimasukan ke folder kenaangan / duplicate dengna nama sesuai jumlah yang sudah dihitung tadi  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM0NTYxMTE5LDE1MjQxMTc3NDgsMTg3Mz
-I2NDUxM119
+eyJoaXN0b3J5IjpbLTIzODQ2OTc2NCwxNTI0MTE3NzQ4LDE4Nz
+MyNjQ1MTNdfQ==
 -->
