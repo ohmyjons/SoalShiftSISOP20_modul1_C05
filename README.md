@@ -134,7 +134,18 @@ Pada soal nomor 3 ini, program harus dapat melakukan download secara otomatis di
 
 Pada 3.A, program harus bisa melakukan download dari link yang disediakan dan juga mengambil pesan wget agar tidak tampil pada terminal.
 
+```
+#! /bin/bash
 
+ > /home/iqbalhumam73/p1/tiga/wget.log   
+ > /home/iqbalhumam73/p1/tiga/location.log 
+
+for ((a=1; a<=28; a=a+1))
+	do
+	wget -a /home/iqbalhumam73/p1/tiga/wget.log "https://loremflickr.com/320/240/cat" -O /home/iqbalhumam73/p1/tiga/pdkt_kusuma_"$a".jpeg
+done
+```
+Pada 3A, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTY1NDA5MTksMTg3MzI2NDUxM119
+eyJoaXN0b3J5IjpbLTEzMTY2NjA5NTQsMTg3MzI2NDUxM119
 -->
