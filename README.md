@@ -201,9 +201,8 @@ done
 cat wget.log >> wget.log.bak
 cat location.log >> location.log.bak
 ```
-
-
+Setelah 28 foto didownload, location dari setiap foto disimpan dalam suatu array. Kemudian dilakukan looping sampai 28 kali untuk melakukan cek dari semua foto yang baru didownload.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDI5NDc0OTMsMTUyNDExNzc0OCwxOD
+eyJoaXN0b3J5IjpbLTE1NDY5NTY3NDQsMTUyNDExNzc0OCwxOD
 czMjY0NTEzXX0=
 -->
