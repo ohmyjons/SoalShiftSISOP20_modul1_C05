@@ -110,7 +110,7 @@ cek4=${kecil[$jam-1]}
 ```
 jadi nanti cek berisi huruf yang urutannya sesuai jam yang ada misal jam 1 akan di mulai dari b jam 2 dari c dan seterusnya
 
-untuk merename file sayab menggunakna MV
+untuk merename file sayab menggunakan MV
 ```
 mv $1 $save.txt
 ```
@@ -127,10 +127,11 @@ cek3=${kecil[26-jam]}
 cek4=${kecil[26-jam-1]}
 
 save=$(echo "$fix2" | tr '[A-Za-z]' ["$cek1"-ZA-"$cek2""$cek3"-za-"$cek4"])
-``` 
+```
 
+##no 3
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNDk0NjI2M119
+eyJoaXN0b3J5IjpbMTUxNzE4Njc2OV19
 -->
