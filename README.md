@@ -154,7 +154,7 @@ Pada soal 3B, program tiga.sh harus berjalan otomatis sesuai permintaan soal. Ma
 ```
 Program tiga.sh akan ter-bash secara otomatis di menit ke 5 tiap jam 6, 14, 22 dan setiap hari kecuali hari Sabtu.
 
- Pada 3C, program harus melakukan check secara otomatis, apabila foro
+ Pada 3C, program harus melakukan check secara otomatis, apabila gambar yang terdownload belum pernah terdownload sebelumnya, maka gambar tersebut harus disimpan dalam folder kenangan dengan nomor urut. Namun, apabila gambar sudah pernah terdownload, maka gambar tersebut harus disimpan dalam folder Duplicate.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MzYwNDMwNCwxODczMjY0NTEzXX0=
+eyJoaXN0b3J5IjpbMTUyNDExNzc0OCwxODczMjY0NTEzXX0=
 -->
