@@ -129,9 +129,10 @@ cek4=${kecil[26-jam-1]}
 save=$(echo "$fix2" | tr '[A-Za-z]' ["$cek1"-ZA-"$cek2""$cek3"-za-"$cek4"])
 ```
 
-##no 3
+## NO 3
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNzE4Njc2OV19
+eyJoaXN0b3J5IjpbMTg3MzI2NDUxM119
 -->
